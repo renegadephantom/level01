@@ -1,0 +1,192 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container {
+	width: 1024px;
+	height: 800px;
+	position: relative;
+	top:auto;
+}
+
+#container img.sky {
+	position: absolute;
+	width: 1024px;
+	height: 800px;
+	background:url("sea2.png");
+//	-webkit-animation-duration: 10s;
+//	-webkit-animation-name: sky;
+//	-webkit-animation-timing-function: linear;
+//	-webkit-animation-iteration-count: infinite;	
+}
+
+#jungle {
+	position: absolute;
+	width: 1024px;
+	height: 800px;
+	background: url("coverpage.png");
+
+}
+
+
+#topstick {
+	position: absolute;
+	width: 100px;
+	height: 500px;
+	top: 255px;
+	left:170px;
+	background: url("log.png");
+	
+}
+
+#mitemshapes {
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	top: 400px;
+	left:100px;
+	background: url("shapes-board.png");
+}
+
+#mitemcolors {
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	top: 500px;
+	left:120px;
+	background: url("colors-board.png");
+}
+
+#mitemquit {
+	position: absolute;
+	width: 300px;
+	height: 100px;
+	top: 600px;
+	left:100px;
+	background: url("quit-board.png");
+}
+
+
+#puzzle {
+	position: absolute;
+	width: 175px;
+	height: 175px;
+	top: 100px; 
+	left: 423.5px;
+	background: url("square-puzzle.png");
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-name: puzzlescale;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;	
+}
+
+#shape1 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 500px; 
+	left: 100px;
+	background: url("square-200.png");
+}
+
+#shape2 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 500px; 
+	left: 412px;
+	background: url("circle-200.png");
+}
+
+#shape3 {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 500px; 
+	left: 724px;
+	background: url("star-200.png");	
+}
+
+
+
+#arrow {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 700px; 
+	left: 900px;
+}
+
+.sunman{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 10px; 
+	left: 700px;
+	background: url("sunsmile.png");
+	background-repeat:no-repeat;
+}
+
+.sunsad{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 10px; 
+	left: 700px;
+	background: url("sunsad.png");
+	background-repeat:no-repeat;
+}
+
+#box1 {
+	background: #9DCEFF;
+	width: 400px;
+	height: 200px;
+}
+
+@-webkit-keyframes mshape {
+	50% {top:250px;}
+	100% {top: 50px;left: 412px;}
+}
+
+@-webkit-keyframes puzzlescale {
+	50% {-webkit-transform:scale(1.25,1.25);}
+	100% {-webkit-transform:scale(1,1);}
+}
+
+
+@-webkit-keyframes sundrop {
+	50% {top:60px;left: 700px;}
+	100% {top: 20px;left: 700px;}
+}
+
+
+@-webkit-keyframes sky {
+	from {
+		left: 0;	
+	}
+	to {
+//		left: -1024px;
+		left: -500px;	
+	}
+}
+
+
+.applyman {
+	background : green;
+}
+
+
+.shape1Animate {
+	-webkit-animation-direction: normal;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-name: mshape;
+    -webkit-animation-timing-function: ease;
+}
+
+.sunAnimate {
+	-webkit-animation-direction: normal;
+    -webkit-animation-duration: 0.7s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-name: sundrop;
+    -webkit-animation-timing-function: ease;
+}
